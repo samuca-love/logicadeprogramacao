@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+    <head>       
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Lógica de Programação</title>
+        <link rel="stylesheet" href="newcss.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.2/css/fontawesome.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/brands.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    </head>
+    <body>
+        <section class="sub-header3">
+            <nav>
+                <a href="index.html"><img src="imagens/logo3.png"></a>
+                <div class="nav-links" id="navLinks">
+                    <i class="fa-solid fa-xmark" onclick="hideMenu()"></i>
+                    <ul>
+                        <li><a href="index.html">PÁGINA INICIAL</a></li>
+                        <li><a href="sobre.html">SOBRE</a></li>
+                        <li><a href="aulas.html">AULAS</a></li>
+                        <li><a href="contato.html">CONTATO</a></li>                        
+                    </ul>                   
+                </div>
+                <i class="fa-solid fa-bars" onclick="showMenu()"></i>
+            </nav>
+            <h1>Estruturas de Controle</h1>
+        </section>
+        <section class="row">
+            <div class="aula1-col4">
+                <h1>Hora das estruturas de controle</h1>
+                <p>Uma das aulas mais importantes, pois as estruturas de controle são sempre utilizadas 
+                    por todos os programadores</p>
+                <hr>
+                <h2>O que são Estruturas de Controle?</h2>
+                <p>As estruturas de controle são recursos fundamentais na programação que permitem controlar o 
+                    fluxo de execução do programa, determinando a ordem em que as instruções são executadas 
+                    com base em condições específicas.</p>
+                <h2>Tipos de Estruturas de Controle</h2>
+                <p>Existem três tipos principais de estruturas de controle:</p>
+                <h2>1. Estruturas de Seleção (ou Condicionais)</h2>
+                <p>As estruturas de seleção são utilizadas para tomar decisões com base em condições 
+                    específicas. Elas permitem que o programa execute diferentes blocos de código dependendo
+                    se uma condição é verdadeira ou falsa.</p>
+                <h3>Exemplo em Python:</h3>
+                <img src="imagens/exemplo 4.png" alt="alt"/>
+                <p></p>
+                <h2>2. Estruturas de Repetição (ou Iterativas)</h2>
+                <p>As estruturas de repetição são utilizadas para repetir um bloco de código várias vezes 
+                    até que uma condição seja satisfeita. Elas permitem automatizar tarefas que precisam 
+                    ser realizadas várias vezes.</p>
+                <h3>Exemplo em Python (for loop):</h3>
+                <img src="imagens/exemplo 5.png" alt="alt"/>
+                <p></p>
+                <h3>Exemplo em Python (while loop):</h3>
+                <img src="imagens/exemplo 6.png" alt="alt"/>                
+                <h2>3. Estruturas de Controle de Fluxo</h2>
+                <p>As estruturas de controle de fluxo são utilizadas para alterar o fluxo normal de execução 
+                    do programa. Elas incluem comandos como "break" (para interromper um loop), "continue" 
+                    (para pular para a próxima iteração de um loop) e "pass" 
+                    (para indicar uma instrução vazia).</p>
+                <h3>Exemplo em Python (break):</h3>
+                <img src="imagens/exemplo 7.png" alt="alt"/> 
+                <h2>Escolhendo a Estrutura Certa</h2>
+                <p>A escolha da estrutura de controle certa depende das necessidades específicas do problema 
+                    a ser resolvido. Ao selecionar uma estrutura de controle, é importante considerar a 
+                    eficiência, legibilidade e simplicidade do código.</p>
+                <h2>Conclusão</h2>
+                <p>As estruturas de controle são elementos essenciais na programação que permitem controlar 
+                    o fluxo de execução do programa de forma lógica e estruturada. Dominar o uso dessas 
+                    estruturas é fundamental para escrever programas eficientes, legíveis e funcionais. 
+                    Praticar a utilização de estruturas de controle em diferentes contextos é uma ótima 
+                    maneira de aprimorar suas habilidades de programação e resolver uma variedade de problemas 
+                    computacionais.</p>
+            </div>
+        </section>
+        <section class="next">
+            <a href="aula 4.html" class="hero-btn2">PRÓXIMA AULA -></a>
+        </section>
+      
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        <section class="footer">
+            <h4>SOBRE MIM</h4>
+            <p>Nasci em Itapetininga, tenho 20 anos e estou estudando Engenharia de Software. <br> Aproveita e estuda comigo!</p>
+            <div class="icons">
+                <i class="fa-brands fa-instagram"></i>
+                <i class="fa-brands fa-facebook"></i>
+                <i class="fa-brands fa-linkedin"></i>
+                <i class="fa-brands fa-x-twitter"></i>                
+            </div>
+        </section>
+        
+        
+        
+        
+        
+        <!------JavaScript for Toggle Menu------>
+        <script>
+            
+            var navLinks = document.getElementById("navLinks");
+            function showMenu(){
+                navLinks.style.right = "0";                
+            }
+            function hideMenu(){
+                navLinks.style.right = "-200px";
+            }
+        </script>
+    </body>
+    
+</html>

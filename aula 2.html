@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+    <head>       
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Lógica de Programação</title>
+        <link rel="stylesheet" href="newcss.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.2/css/fontawesome.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/brands.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    </head>
+    <body>
+        <section class="sub-header3">
+            <nav>
+                <a href="index.html"><img src="imagens/logo3.png"></a>
+                <div class="nav-links" id="navLinks">
+                    <i class="fa-solid fa-xmark" onclick="hideMenu()"></i>
+                    <ul>
+                        <li><a href="index.html">PÁGINA INICIAL</a></li>
+                        <li><a href="sobre.html">SOBRE</a></li>
+                        <li><a href="aulas.html">AULAS</a></li>
+                        <li><a href="contato.html">CONTATO</a></li>                        
+                    </ul>                   
+                </div>
+                <i class="fa-solid fa-bars" onclick="showMenu()"></i>
+            </nav>
+            <h1>Variáveis</h1>
+        </section>
+        <section class="row">
+            <div class="aula1-col3">
+                <h1>Vamos aprender Variáveis?</h1>
+                <p>Variáveis é fundamental demais! Sem esse conteúdo, você vai FICAR PARA TRÁS!</p>
+                <hr>
+                <h2>O que são Variáveis?</h2>
+                <p>Variáveis são espaços na memória reservados para armazenar valores que podem
+                    ser modificados durante a execução de um programa. Elas possuem um nome, 
+                    um tipo e um valor associado.</p>
+                <h2>Tipos de Variáveis</h2>
+                
+                <h3>1. Variáveis Numéricas</h3>
+                <p>Variáveis numéricas são utilizadas para armazenar valores numéricos, como inteiros 
+                    (números inteiros) ou números de ponto flutuante (números decimais). 
+                    Alguns exemplos de tipos de variáveis numéricas comuns são: <br> int: para armazenar números inteiros.<br> 
+                    float: para armazenar números de ponto flutuante.</p>
+                <h3>2. Variáveis de Texto (Strings)</h3>
+                <p>Variáveis de texto, ou strings, são utilizadas para armazenar sequências de caracteres 
+                    alfanuméricos. Elas são especialmente úteis para armazenar texto, como nomes, 
+                    mensagens ou qualquer outra informação textual.</p>
+                <h3>3. Variáveis Booleanas</h3>
+                <p>Variáveis booleanas são utilizadas para armazenar valores lógicos, ou seja, verdadeiro 
+                    (true) ou falso (false). Elas são frequentemente utilizadas em expressões condicionais e 
+                    estruturas de controle para tomada de decisões.</p>
+                <h2>Declaração de Variáveis</h2>
+                <p>Antes de utilizar uma variável em um programa, é necessário declará-la. 
+                    A declaração de uma variável envolve especificar seu nome e seu tipo. 
+                    Aqui está um exemplo de declaração de variáveis em diferentes linguagens de programação:</p>
+                <h3>Exemplo em Python:</h3>
+                <img src="imagens/exemplo 1.png" alt="alt"/>
+                <h3>Exemplo em C++:</h3>
+                <img src="imagens/exemplo 2.png" alt="alt"/>
+                <h2>Operações com Variáveis</h2>
+                <p>Uma vez declaradas, as variáveis podem ser utilizadas em operações matemáticas, 
+                    concatenações de texto, comparações lógicas, entre outras.</p>
+                <h3>Exemplos de Operações com Variáveis:</h3>
+                <img src="imagens/exemplo 3.png" alt="alt"/>
+                <h2>Conclusão</h2>
+                <p>Variáveis são componentes essenciais em qualquer programa de computador, pois permitem 
+                    armazenar e manipular dados de forma dinâmica. Entender os tipos de variáveis disponíveis, 
+                    como declará-las e como operar com elas é fundamental para o desenvolvimento de programas 
+                    eficientes e funcionais. Praticar o uso de variáveis em diferentes contextos é uma 
+                    excelente maneira de consolidar o conhecimento sobre esse conceito fundamental da 
+                    programação.</p>
+            </div>
+        </section>
+        <section class="next">
+            <a href="aula 3.html" class="hero-btn2">PRÓXIMA AULA -></a>
+        </section>
+      
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        <section class="footer">
+            <h4>SOBRE MIM</h4>
+            <p>Nasci em Itapetininga, tenho 20 anos e estou estudando Engenharia de Software. <br> Aproveita e estuda comigo!</p>
+            <div class="icons">
+                <i class="fa-brands fa-instagram"></i>
+                <i class="fa-brands fa-facebook"></i>
+                <i class="fa-brands fa-linkedin"></i>
+                <i class="fa-brands fa-x-twitter"></i>                
+            </div>
+        </section>
+        
+        
+        
+        
+        
+        <!------JavaScript for Toggle Menu------>
+        <script>
+            
+            var navLinks = document.getElementById("navLinks");
+            function showMenu(){
+                navLinks.style.right = "0";                
+            }
+            function hideMenu(){
+                navLinks.style.right = "-200px";
+            }
+        </script>
+    </body>
+    
+</html>

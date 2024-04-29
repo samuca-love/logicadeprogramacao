@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+    <head>       
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Lógica de Programação</title>
+        <link rel="stylesheet" href="newcss.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.2/css/fontawesome.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/brands.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    </head>
+    <body>
+        <section class="sub-header3">
+            <nav>
+                <a href="index.html"><img src="imagens/logo3.png"></a>
+                <div class="nav-links" id="navLinks">
+                    <i class="fa-solid fa-xmark" onclick="hideMenu()"></i>
+                    <ul>
+                        <li><a href="index.html">PÁGINA INICIAL</a></li>
+                        <li><a href="sobre.html">SOBRE</a></li>
+                        <li><a href="aulas.html">AULAS</a></li>
+                        <li><a href="contato.html">CONTATO</a></li>                        
+                    </ul>                   
+                </div>
+                <i class="fa-solid fa-bars" onclick="showMenu()"></i>
+            </nav>
+            <h1>Funções e Métodos</h1>
+        </section>
+        <section class="row">
+            <div class="aula1-col5">
+                <h1>Funções e Métodos, ufaaa!</h1>
+                <p>Não preciso nem dizer mais nada. Tudo que você viu nesse site importa, e muito.</p>
+                <hr>
+                <h2>O que são Funções e Métodos?</h2>
+                <p>Funções e métodos são blocos de código reutilizáveis que executam uma tarefa específica. 
+                    Eles ajudam a organizar e modularizar o código, permitindo que partes do programa sejam 
+                    isoladas em unidades independentes e de fácil manutenção.</p>
+                <h2>Funções:</h2>
+                <p>Funções são blocos de código independentes que realizam uma tarefa específica.<br>
+                    Elas podem receber dados como entrada (parâmetros) e retornar resultados como saída.<br>
+                    As funções podem ser chamadas em qualquer lugar do programa onde seja necessário executar 
+                    sua lógica.</p>
+                <h2>Métodos:</h2>
+                <p>Métodos são funções que estão associadas a objetos em programação orientada a objetos.<br>
+                    Eles operam em dados específicos pertencentes a um objeto e podem acessar e modificar o estado do objeto.<br>
+Os métodos são invocados utilizando a notação de ponto, especificando o objeto seguido pelo nome do método.</p>                              
+                <h2>Declaração de Funções</h2>
+                <p>Em muitas linguagens de programação, as funções são declaradas utilizando a palavra-chave 
+                    def (Python), function (JavaScript), fun (Kotlin), entre outras. Aqui está um exemplo de 
+                    declaração de uma função em Python:</p>
+                <img src="imagens/exemplo 8.png" alt="alt"/>
+                <p>Neste exemplo, saudacao é o nome da função e nome é o parâmetro que ela recebe. 
+                    A função simplesmente imprime uma mensagem de saudação utilizando o nome fornecido.</p>
+                <h2>Chamando Funções</h2>
+                <p>Uma vez declarada, uma função pode ser chamada em qualquer lugar do programa, fornecendo os 
+                    argumentos necessários (se houver). Aqui está como chamar a função saudacao definida 
+                    anteriormente:</p>
+                <img src="imagens/exemplo 9.png" alt="alt"/>                
+                <h2>Exemplo de Método em Python</h2>
+                <p>Em Python, os métodos são funções que pertencem a objetos específicos. Aqui está um exemplo 
+                    de definição e uso de um método em Python:</p>
+                <img src="imagens/exemplo 10.png" alt="alt"/> 
+                <p>Neste exemplo, saudar é um método da classe Pessoa, que imprime uma mensagem de saudação 
+                    utilizando o nome da pessoa.</p>
+                <h2>Conclusão</h2>
+                <p>Funções e métodos são componentes essenciais na programação que permitem organizar e 
+                    reutilizar o código de forma eficiente. Dominar o uso de funções e métodos é fundamental 
+                    para escrever programas modulares, legíveis e de fácil manutenção. Praticar a criação e 
+                    chamada de funções, bem como o uso de métodos em objetos, é uma excelente maneira de 
+                    aprimorar suas habilidades de programação e resolver uma variedade de problemas 
+                    computacionais.</p>
+            </div>
+        </section>
+        <section class="next">
+            <a href="index.html" class="hero-btn2">PRONTO ESTUDANTE</a>
+        </section>
+      
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        <section class="footer">
+            <h4>SOBRE MIM</h4>
+            <p>Nasci em Itapetininga, tenho 20 anos e estou estudando Engenharia de Software. <br> Aproveita e estuda comigo!</p>
+            <div class="icons">
+                <i class="fa-brands fa-instagram"></i>
+                <i class="fa-brands fa-facebook"></i>
+                <i class="fa-brands fa-linkedin"></i>
+                <i class="fa-brands fa-x-twitter"></i>                
+            </div>
+        </section>
+        
+        
+        
+        
+        
+        <!------JavaScript for Toggle Menu------>
+        <script>
+            
+            var navLinks = document.getElementById("navLinks");
+            function showMenu(){
+                navLinks.style.right = "0";                
+            }
+            function hideMenu(){
+                navLinks.style.right = "-200px";
+            }
+        </script>
+    </body>
+    
+</html>

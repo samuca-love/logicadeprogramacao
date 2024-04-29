@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+    <head>       
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Lógica de Programação</title>
+        <link rel="stylesheet" href="newcss.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.2/css/fontawesome.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/brands.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    </head>
+    <body>
+        <section class="sub-header">
+            <nav>
+                <a href="index.html"><img src="imagens/logo3.png"></a>
+                <div class="nav-links" id="navLinks">
+                    <i class="fa-solid fa-xmark" onclick="hideMenu()"></i>
+                    <ul>
+                        <li><a href="index.html">PÁGINA INICIAL</a></li>
+                        <li><a href="sobre.html">SOBRE</a></li>
+                        <li><a href="aulas.html">AULAS</a></li>
+                        <li><a href="contato.html">CONTATO</a></li>                        
+                    </ul>                   
+                </div>
+                <i class="fa-solid fa-bars" onclick="showMenu()"></i>
+            </nav>
+            <h1>Entre em contato com a Anhanguera</h1>
+        </section>
+        <section class="location">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3656.7331823959653!2d-48.04183702571288!3d-23.578024462202574!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94c5cd82586d3e6f%3A0x86dbce27b6b8753e!2sFaculdade%20Anhanguera%20-%20Itapetininga!5e0!3m2!1spt-BR!2sbr!4v1713967714372!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>        
+        </section>
+        <section class="contate-nos">
+            <div class="row">
+                <div class="contact-col">
+                    <div>
+                         <i class="fa-solid fa-house"></i>
+                         <span>
+                             <h5>Rua Doutor Coutinho 733, Centro</h5>
+                             <p>Itapetininga, São Paulo, Brasil</p>
+                         </span>
+                    </div>
+                    <div>
+                         <i class="fa-solid fa-phone"></i>
+                         <span>
+                             <h5>15998480273</h5>
+                             <p>Somente segundas</p>
+                         </span>
+                    </div>
+                    <div>
+                         <i class="fa-solid fa-envelope"></i>
+                         <span>
+                             <h5>samuelmessiasribeirodelima@gmail.com</h5>
+                             <p>Me manda um e-mail.</p>
+                         </span>
+                    </div>
+                </div>
+                <div class="contact-col">
+                    <form action="form-handler.php" method="post">
+                        <input type="text" name="name" placeholder="Digite seu nome" required>
+                        <input type="email" name="email" placeholder="Digite seu endereço de email" required>
+                        <input type="text" name="subject" placeholder="Digite o assunto" required>
+                        <textarea rows="8" name="message" placeholder="Message" required></textarea>
+                        <button type="submit" class="hero-btn red-btn">Enviar mensagem</button>
+                    </form> 
+                </div>
+            </div>
+        </section>
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        <section class="footer">
+            <h4>SOBRE MIM</h4>
+            <p>Nasci em Itapetininga, tenho 20 anos e estou estudando Engenharia de Software. <br> Aproveita e estuda comigo!</p>
+            <div class="icons">
+                <i class="fa-brands fa-instagram"></i>
+                <i class="fa-brands fa-facebook"></i>
+                <i class="fa-brands fa-linkedin"></i>
+                <i class="fa-brands fa-x-twitter"></i>                
+            </div>
+        </section>
+        
+        
+        
+        
+        
+        <!------JavaScript for Toggle Menu------>
+        <script>
+            
+            var navLinks = document.getElementById("navLinks");
+            function showMenu(){
+                navLinks.style.right = "0";                
+            }
+            function hideMenu(){
+                navLinks.style.right = "-200px";
+            }
+        </script>
+    </body>
+    
+</html>
